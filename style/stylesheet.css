@@ -68,13 +68,7 @@ header{
 	visibility: none;
 	display: none;
 }
-.navBar__dropdown-show {
-	display:inline;
-	visibility: visible;
-	background-color: #000;
-	overflow: auto;
-	z-index: 1;
-}
+
 .navBar__dropdown a{
 	font-size: 35px;
 	width: 100%;
@@ -91,7 +85,4 @@ header{
 }
 .navBar__dropdown a:last-child{
 	color: #e17;
-}
-.hide{
-	display: none;
 }
