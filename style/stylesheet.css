@@ -1,0 +1,97 @@
+@font-face{
+	font-family: "FuturaC";
+	src: url(../fonts/futura-condensed-pt-medium.otf);
+}
+@font-face{
+	font-family: "FuturaBook";
+	src: url(../fonts/futura-pt-book.otf);
+}
+
+
+body{
+	width: 100%;
+	background-color: black; 
+}
+
+/* styling for header*/
+
+header{
+	overflow: auto;
+}
+.logo{
+	float: left;
+	width: 46%;
+	padding: 2% 4%;
+}
+.avatar{
+	position: absolute;
+	width: 82px;
+	float: right;
+	top: 30px;
+	right: 10px;
+}
+.navBar{
+	list-style-type: none;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #333333;
+}
+
+.navBar__items{
+	width: 25%;
+	float: left;
+}
+.DDArrow img{
+	width: 20px;
+}
+.navBar .navBar__items a{
+	float: left;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-family: "FuturaC";
+	color: #fff;
+	font-size: 60px;
+	letter-spacing: 0.05em;
+	width: 100%;
+	border-right: 1px solid #333333;
+	padding-top: 4px;
+	padding-bottom: 8px;
+}
+.navBar .hide{
+	display: none;
+}
+.navBar__dropdown{
+	height: 100%;
+}
+.navBar__dropdown-hide{
+	visibility: none;
+	display: none;
+}
+.navBar__dropdown-show {
+	display:inline;
+	visibility: visible;
+	background-color: #000;
+	overflow: auto;
+	z-index: 1;
+}
+.navBar__dropdown a{
+	font-size: 35px;
+	width: 100%;
+	color: white;
+	padding: 40px 40px;
+	border-bottom: 5px solid #6A6A6A;
+	font-weight: bold;
+	font-family: "futuraBook";
+	display: block;
+	background-color:#1a1a1a;
+    text-align: left;
+	text-decoration: none;
+	margin: 0 auto;
+}
+.navBar__dropdown a:last-child{
+	color: #e17;
+}
+.hide{
+	display: none;
+}

@@ -1,0 +1,33 @@
+body{
+	width: 100%;
+	background-color: black; 
+}
+header{
+	overflow: auto;
+}
+.logo{
+	float: left;
+	width: 46vw;
+	padding: 2% 4%;
+}
+.avatar{
+	position: absolute;
+	width: 82px;
+	float: right;
+	top: 30px;
+	right: 10px;
+}
+.navBar{
+	color: #fff;
+	min-width: 100%;
+}
+.navBar__wrapper{
+	margin: 0 auto;
+	max-width: 100%;
+}
+.navBar__wrapper ul{
+	width: 100%;
+}
+.navBar__wrapper li{
+	float: left;
+}
