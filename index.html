@@ -5,7 +5,8 @@
     <title>The Verge</title>
     <link rel="icon" href="./images/icon.png">
     <link rel="stylesheet" type="text/css" href="./style/stylesheet.css">
-    <script src="./script/script.js"></script>
+	<script src="./script/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 </head>
 
 <body>
@@ -15,43 +16,43 @@
             <a href="#"><img src="./images/avatar.svg" /></a>
         </div>
         <div class="navBar">
-            <div class="navBar__items">
+            <div class="navBar__items navBar__visible">
                 <a href="#tech" onclick="DD_click(1)">
 			  TECH 
 			  <span class="DDArrow"><img src="./images/drop-down-arrow.svg" alt=""/>
 			  </span>
 		   </a>
             </div>
-            <div class="navBar__items">
+			<div class="navBar__items navBar__visible">
                 <a href="#science" onclick="DD_click(2)">
 			  SCIENCE
 			  <span class="DDArrow"><img src="./images/drop-down-arrow.svg" alt=""/>
 			  </span>
 		   </a>
             </div>
-            <div class="navBar__items">
+            <div class="navBar__items navBar__visible">
                 <a href="#culture" onclick="DD_click(3)">
 			  CULTURE
 			  <span class="DDArrow"><img src="./images/drop-down-arrow.svg" alt=""/>
 			  </span>
 		   </a>
             </div>
-            <div class="navBar__items hide">
+            <div class="navBar__items navBar__hidden">
                 <a href="#more">
 			  REVIEWS
 			  <span class="DDArrow"><img src="./images/drop-down-arrow.svg" alt=""/>
 			  </span>
 		   </a>
             </div>
-            <div class="navBar__items hide">
+            <div class="navBar__items navBar__hidden">
                 <a href="#more">LONGFORM
 		   </a>
             </div>
-            <div class="navBar__items hide">
+            <div class="navBar__items navBar__hidden">
                 <a href="#more">VIDEO
 		   </a>
             </div>
-            <div class="navBar__items">
+            <div class="navBar__items navBar__visible">
                 <a href="#more" onclick="DD_click(4)">
 			  MORE
 			  <span class="DDArrow"><img src="./images/drop-down-arrow.svg" alt=""/>
