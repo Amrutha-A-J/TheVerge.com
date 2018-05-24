@@ -1,57 +1,102 @@
 @font-face{
-	font-family: "FuturaC";
-	src: url(../fonts/futura-condensed-pt-medium.otf);
+	font-family: "HeroicC";
+	src: url(../fonts/heroicc.ttf);
 }
 @font-face{
 	font-family: "FuturaBook";
-	src: url(../fonts/futura-pt-book.otf);
+	src: url(../fonts/futura-pt-medium.otf);
 }
-
-
-body{
+html,body{
 	width: 100%;
+	margin: 0px;
 	background-color: black; 
+	overflow: auto;
 }
 
 /* styling for header*/
-
 header{
 	overflow: auto;
+	letter-spacing: 0.1em;
 }
 .logo{
 	float: left;
-	width: 156px;
-	padding: 2% 4%;
+	width: 145px;
+	margin: 8px;
 }
-.avatar{
-	position: absolute;
+.header__theme p{
+	padding-top: 20px;
+	text-align: center;
+	font-family: "HeroicC";
+	font-size: 20px;
+	color: #fff;
+	margin: 0 auto;
+	width: 100%;
+}
+.user{
+	padding-top: 0.1%;
+	float: right;
+	width: 13%;
+}
+.user__avatar{
+	display: inline-block;
+	margin: 8px;
+}
+.user__search{
+	display: none;
     width: 30px;
-    float: right;
-    top: 15px;
-    right: 10px;
+	margin: 8px;
+}
+.user__avatar img{
+	width: 25px;
+}
+.user__search img{
+	width: 25px;
 }
 .navBar{
 	list-style-type: none;
 	display: inline-block;
 	width: 100%;
+	height: auto;
 	border-bottom: 1px solid #333333;
+	overflow: auto;
 }
-
+.navBar ul{
+	width: 100%;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+}
 .navBar__items{
-	width: 25%;
 	float: left;
+	width: 25%;
+	display: block;
+}
+.navBar__items:hover{
+	color: lightgray;
+}
+.navBar__items:hover .navBar__content{
+	position: absolute;
+	display: inline-block;
+	width: 100vw;
+	top: 78px;
+	left: 0;
+	background-color: #6A6A6A;
 }
 .DDArrow img{
 	width: 10px;
 }
-.navBar .navBar__items a{
+.DDMenu{
+	width: 15px;
+	display: none;
+}
+.navBar .navBar__items>a{
 	float: left;
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
-	font-family: "FuturaC";
-	color: #fff;
+	font-family: "HeroicC";
 	font-size: 20px;
+	font-weight: 500;
 	letter-spacing: 0.05em;
 	width: 100%;
 	border-right: 1px solid #333333;
@@ -64,34 +109,170 @@ header{
 .navBar__dropdown{
 	height: 100%;
 }
-.navBar__dropdown-hide{
-	visibility: none;
-	display: none;
+.navBar__dropdown ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
-.navBar__dropdown-show {
-	display:inline;
-	visibility: visible;
-	background-color: #000;
-	overflow: auto;
-	z-index: 1;
+.navBar__content a{
+	float: left;
+	text-align: left;
+	text-decoration: none;
+	font-family: "FuturaBook";
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	background-color: #1a1a1a;
+	width: 100%;
+	border-bottom: 1px solid #6A6A6A;
+	padding: 10px 10px 10px 20px;
 }
-.navBar__dropdown a{
-    font-size: 13px;
-    width: 100%;
-    color: white;
-    padding: 15px 10px;
-    border-bottom: 1px solid #6A6A6A;
-    font-weight: bold;
-    font-family: "futuraBook";
-    display: block;
-    background-color: #1a1a1a;
-    text-align: left;
-    text-decoration: none;
-    margin: 0 auto;
-}
-.navBar__dropdown a:last-child{
+.navBar__content a:last-child{
 	color: #e17;
 }
 .hide{
 	display: none;
+}
+.social{
+    background-color: #000;
+    width: 12%;
+	padding: 1.3% 0px 0 5%;
+}
+.social a{
+	margin: 3px;
+}
+@media only screen and (min-device-width : 768px){
+	.shift-right{
+		float: right;
+	}
+	.column3{
+		overflow: auto;
+		-moz-column-width: 4.5em; /* Firefox */
+		-webkit-column-width: 4.5em; /* webkit, Safari, Chrome */
+		column-width: 4.5em;
+		-webkit-column-gap: 0; /* Chrome, Safari, Opera */
+		-moz-column-gap: 0; /* Firefox */
+		column-gap: 0;
+	}
+	.column2{
+		-moz-column-width: 4.5em; /* Firefox */
+		-webkit-column-width: 4.5em; /* webkit, Safari, Chrome */
+		column-width: 4.5em;
+		-webkit-column-gap: 0; /* Chrome, Safari, Opera */
+		-moz-column-gap: 0; /* Firefox */
+		column-gap: 0;
+	}
+	.show{
+		display: block;
+	}
+	.navBar,.user{
+		background-color: #000;
+	}
+	.logo{
+		display:block;
+		float: none;
+		width:100%;
+		padding: 60px 0px 60px 0px;
+		background: url("../images/Masthead_SM_3.0.png") no-repeat fixed;
+		background-size:cover;
+		margin: 0 auto;
+	}
+	.logo__image{
+		width: 700px;
+		margin: 0 auto;
+	}
+	.navBar{
+		width: 85%;
+		float:left;
+		padding-top: 1%;
+		border-bottom: 0;
+	}
+	.navBar ul{
+		width: 75%;
+		overflow: auto;
+		padding: 0;
+		margin: 0;
+	}
+
+	.navBar .navBar__items a{
+		border: 0;
+	}
+	.navBar__items:hover .navBar__content{
+		position: initial;
+		display: inline-block;
+		width: auto;
+	}
+	.navBar__content a {
+		padding: 7px 0px 7px 10px;
+		display: inline-block;
+	}
+
+}
+/* Media Queries - tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+	html,body,header{
+		overflow: auto;
+	}
+	.medium-visible{
+		display: inline-block;
+	}
+	.medium-hidden{
+		display: none;
+	}
+	.navBar__items{
+		margin: 7px;
+		width: 17%;
+	}
+	.navBar .navBar__items a{
+		border-right:0; 
+	}
+	#navBar__more{
+		float: right;
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1024px) {
+	.large-visible{
+		display: inline-block;
+	}
+	.large-hidden{
+		display: none;
+	}
+	.navBar{
+		width: 70%;
+	}
+	.navBar ul{
+		width: 100%;;
+	}
+	.navBar__items{
+		width: 12%;
+		margin: 0px 1px;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1440px) {
+	.xlarge-visible{
+		display: inline-block;
+	}
+	.xlarge-hidden{
+		display: none;
+	}
+	.navBar {
+		width: 74%;
+	}
+	.navBar__items{
+		width: 9%;
+	}
+	.navBar .navBar__items>a{
+		width: 80%;
+	}
+	.social{
+		width:8%;
+	}
+	.user{
+		padding-top: 0.5%;
+		float: right;
+		width: 13%;
+	}
 }
