@@ -69,7 +69,6 @@ header{
 .navBar__items{
 	float: left;
 	width: 25%;
-	display: block;
 }
 .navBar__items:hover{
 	color: lightgray;
@@ -136,7 +135,7 @@ header{
 .social{
     background-color: #000;
     width: 12%;
-	padding: 1.3% 0px 0 5%;
+	padding: 1.3% 0px 0 1%;
 }
 .social a{
 	margin: 3px;
@@ -239,6 +238,7 @@ header{
 		display: none;
 	}
 	.navBar{
+		margin-left: 40px;
 		width: 70%;
 	}
 	.navBar ul{
@@ -259,7 +259,7 @@ header{
 		display: none;
 	}
 	.navBar {
-		width: 74%;
+		width: 78%;
 	}
 	.navBar__items{
 		width: 9%;
@@ -273,6 +273,6 @@ header{
 	.user{
 		padding-top: 0.5%;
 		float: right;
-		width: 13%;
+		width: 7%;
 	}
 }
