@@ -187,6 +187,7 @@ header{
 		border-bottom: 0;
 	}
 	.navBar ul{
+		list-style-type: none;
 		width: 75%;
 		overflow: auto;
 		padding: 0;
@@ -242,6 +243,7 @@ header{
 		width: 70%;
 	}
 	.navBar ul{
+		list-style-type: none;
 		width: 100%;;
 	}
 	.navBar__items{
