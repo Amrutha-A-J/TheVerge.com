@@ -6,6 +6,15 @@
 	font-family: "FuturaBook";
 	src: url(../fonts/futura-pt-medium.otf);
 }
+@font-face{
+	font-family: "FuturaBookThin";
+	src: url(../fonts/futura-pt-book.otf);
+}
+@font-face{
+	font-family: "FuturaBookLight";
+	src: url(../fonts/futura-pt-light.otf);
+}
+
 html,body{
 	width: 100%;
 	margin: 0px;
@@ -277,4 +286,91 @@ header{
 		float: right;
 		width: 7%;
 	}
+}
+
+/* End of NavBar Styling    _________________________________________________  */ 
+
+/* Feature Cards Styling    */
+.content,.content__featured,.borderholder,.featured{
+	overflow: auto;
+	font-family: "futuraBookThin";
+	color: #fff;
+}
+.pink__font{
+	color: #E17;
+}
+.featured__1 .image__container{
+	float: left;
+	width: 50%;
+}
+.featured__1 .image__container img{
+	width : 99%;
+}
+.borderholder{
+	margin: 0px 20px;
+	background-image: linear-gradient(90deg, rgb(255, 217, 0) 0%, rgb(233, 4, 101) 80%);
+}
+.featured{
+	margin: 1px;
+	padding: 10px;
+	background-color: #000;
+}
+.featured__1 .title__container{
+	display: inline-block;
+	width: 48%;
+	float: right;
+}
+.featured__1 .title__container h3,p{
+	font-size: 20px;
+  	margin: 2px;
+}
+.featured__1 .title__container p{
+	font-size: 15px;
+}
+
+.featured-sm .image__container{
+	float: left;
+	width: 30%;
+}
+.featured-sm .image__container img{
+	width : 99%;
+}
+.featured-sm .title__container{
+	font-family: "FuturaBookLight";
+	display: inline-block;
+	width: 65%;
+	float: right;
+}
+.featured-sm .title__container h3,p{
+	font-weight: 600;
+	font-size: 18px;
+  	margin: 2px;
+}
+.featured-sm .title__container p{
+	font-size: 15px;
+}
+
+/* Media Queries - tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+	.featured-md-1{
+
+	}
+	.featured-md-2{
+
+	}
+	.featured-md-3{
+
+	}
+	.featured-md-2 .image__container{
+
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1024px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1440px) {
+
 }
