@@ -19,12 +19,15 @@ html,body{
 	width: 100%;
 	margin: 0px;
 	background-color: black; 
-	overflow: auto;
+	
 }
-
+.clearfix::after {
+	clear: both;
+	display: block;
+  }
 /* styling for header*/
 header{
-	overflow: auto;
+	clear:both;
 	letter-spacing: 0.1em;
 }
 .logo{
@@ -66,21 +69,26 @@ header{
 	width: 100%;
 	height: auto;
 	border-bottom: 1px solid #333333;
-	overflow: auto;
+	clear:both;
 }
 .navBar ul{
 	list-style-type: none;
 	width: 100%;
-	overflow: auto;
+	clear:both;
 	padding: 0;
 	margin: 0;
 }
 .navBar__items{
-	float: left;
-	width: 25%;
+	display: inline-block;
+    width: 22%;
+    padding: 5px 0px 5px 4px;
+    border-right: 1px solid #333333;
 }
 .navBar__items:hover{
-	color: lightgray;
+	background-color: #1a1a1a;
+}
+.navBar__items:hover a .DDArrow img{
+	fill: white;
 }
 .navBar__items:hover .navBar__content{
 	position: absolute;
@@ -98,7 +106,6 @@ header{
 	display: none;
 }
 .navBar .navBar__items>a{
-	float: left;
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
@@ -107,9 +114,7 @@ header{
 	font-weight: 500;
 	letter-spacing: 0.05em;
 	width: 100%;
-	border-right: 1px solid #333333;
-	padding-top: 4px;
-	padding-bottom: 8px;
+	padding: 4px 0 4px 2px;
 }
 .navBar__hidden{
 	display: none;
@@ -143,33 +148,14 @@ header{
 }
 .social{
     background-color: #000;
-    width: 12%;
+    width: 11%;
 	padding: 1.3% 0px 0 1%;
 }
 .social a{
 	margin: 3px;
 }
 @media only screen and (min-device-width : 768px){
-	.shift-right{
-		float: right;
-	}
-	.column3{
-		overflow: auto;
-		-moz-column-width: 4.5em; /* Firefox */
-		-webkit-column-width: 4.5em; /* webkit, Safari, Chrome */
-		column-width: 4.5em;
-		-webkit-column-gap: 0; /* Chrome, Safari, Opera */
-		-moz-column-gap: 0; /* Firefox */
-		column-gap: 0;
-	}
-	.column2{
-		-moz-column-width: 4.5em; /* Firefox */
-		-webkit-column-width: 4.5em; /* webkit, Safari, Chrome */
-		column-width: 4.5em;
-		-webkit-column-gap: 0; /* Chrome, Safari, Opera */
-		-moz-column-gap: 0; /* Firefox */
-		column-gap: 0;
-	}
+
 	.show{
 		display: block;
 	}
@@ -191,23 +177,25 @@ header{
 	}
 	.navBar{
 		width: 85%;
-		float:left;
 		padding-top: 1%;
 		border-bottom: 0;
 	}
 	.navBar ul{
 		list-style-type: none;
-		width: 75%;
-		overflow: auto;
+		clear:both;
 		padding: 0;
 		margin: 0;
 	}
-
+	.navBar__items{
+		position: relative;
+		border: 0;
+	}
 	.navBar .navBar__items a{
 		border: 0;
 	}
 	.navBar__items:hover .navBar__content{
-		position: initial;
+		position: absolute;
+		top: 38px;
 		display: inline-block;
 		width: auto;
 	}
@@ -220,7 +208,7 @@ header{
 /* Media Queries - tablet */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
 	html,body,header{
-		overflow: auto;
+		clear:both;
 	}
 	.medium-visible{
 		display: inline-block;
@@ -229,8 +217,8 @@ header{
 		display: none;
 	}
 	.navBar__items{
-		margin: 7px;
-		width: 17%;
+		padding: 7px;
+		width: 14%;
 	}
 	.navBar .navBar__items a{
 		border-right:0; 
@@ -248,7 +236,7 @@ header{
 		display: none;
 	}
 	.navBar{
-		margin-left: 40px;
+		margin-left: 15px;
 		width: 70%;
 	}
 	.navBar ul{
@@ -256,8 +244,11 @@ header{
 		width: 100%;;
 	}
 	.navBar__items{
-		width: 12%;
+		width: 11%;
 		margin: 0px 1px;
+	}
+	.navBar__items:hover .navBar__content{
+		top: 32px;
 	}
 }
 
@@ -273,7 +264,8 @@ header{
 		width: 78%;
 	}
 	.navBar__items{
-		width: 9%;
+		min-width: 90px;
+		width: auto;
 	}
 	.navBar .navBar__items>a{
 		width: 80%;
@@ -292,33 +284,34 @@ header{
 
 /* Feature Cards Styling    */
 .content,.content__featured,.borderholder,.featured{
-	overflow: auto;
+	clear:both;
 	font-family: "futuraBookThin";
 	color: #fff;
+	padding: 1%;
 }
 .pink__font{
 	color: #E17;
 }
 .featured__1 .image__container{
-	float: left;
+
+	display: inline-block;
 	width: 50%;
 }
 .featured__1 .image__container img{
 	width : 99%;
 }
 .borderholder{
-	margin: 0px 20px;
+	padding: 1px;
 	background-image: linear-gradient(90deg, rgb(255, 217, 0) 0%, rgb(233, 4, 101) 80%);
 }
 .featured{
-	margin: 1px;
 	padding: 10px;
+	clear:both;
 	background-color: #000;
 }
 .featured__1 .title__container{
 	display: inline-block;
-	width: 48%;
-	float: right;
+	width: 44%;
 }
 .featured__1 .title__container h3,p{
 	font-size: 20px;
@@ -329,8 +322,9 @@ header{
 }
 
 .featured-sm .image__container{
-	float: left;
+	display: inline-block;
 	width: 30%;
+
 }
 .featured-sm .image__container img{
 	width : 99%;
@@ -339,7 +333,6 @@ header{
 	font-family: "FuturaBookLight";
 	display: inline-block;
 	width: 65%;
-	float: right;
 }
 .featured-sm .title__container h3,p{
 	font-weight: 600;
@@ -352,17 +345,37 @@ header{
 
 /* Media Queries - tablet */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
-	.featured-md-1{
-
+	.bh-md6{
+		width: 49.47%;
+    	display: inline-block;
 	}
-	.featured-md-2{
-
+	.featured{
+		padding: 0;
 	}
-	.featured-md-3{
-
+	.featured-md-1 .image__container{
+		overflow: hidden;
+		margin: 10px;
 	}
-	.featured-md-2 .image__container{
+	.featured-md-1 .image__container img{
+		width: 123%;
+		margin: -10px 0px -8px -100px;
+	}
 
+	.featured-md-1 .title__container{
+		margin: 10px;
+	}
+	.featured-sm .image__container{
+		margin: 10px;
+		width: 99%;
+		overflow: hidden;
+	}
+	.featured-sm .image__container img {
+		margin: -45px 0 0 0;
+		width: 95%;
+	}
+	
+	.featured-sm .title__container{
+		margin: 10px;
 	}
 }
 /* Desktops and laptops ----------- */
