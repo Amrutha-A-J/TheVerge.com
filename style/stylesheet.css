@@ -30,11 +30,7 @@ body{
 	background-color: black; 
 }
 main{
-	/* max-width: 1440px; */
 	margin: 0 auto;
-}
-.content__featured{
-	/* max-width: 1400px; */
 }
 .clearfix::after {
 	clear: both;
@@ -298,7 +294,6 @@ header{
 		width: 100%;
 	}
 	.content__featured{
-		/* max-width: 1440px; */
 		margin: 0 auto;
 	}
 	.xlarge-visible{
@@ -574,7 +569,7 @@ header{
 		margin: 0;
 	}
 	.bh-last .title__container h3{ 
-		font-family: "FuturaBook";
+		font-family: "FuturaBookLight";
 		font-size: 20px;
 		margin: 0;
 	}
@@ -685,7 +680,6 @@ header{
 		background-size: cover;
 	}
 	.header-items{
-		/* max-width: 1440px; */
 		margin: 0 auto;
 	}
 	.header-items .logo {
@@ -728,11 +722,84 @@ header{
 
 /* styles for articles       */
 .content__articles{
-	/* max-width: 1440px; */
+	padding: 1%;
 	margin: 0 auto;
 	background-color: white;
+	color: #000;
+}
+.section{
+	font-family: "FuturaBookLight";
+	margin: 0 auto;
+	width: 82%;
+}
+.section__content-left{
+	width:75%;
+}
+.section__content-left .section__imgContainer{
+	display: inline-block;
+	width:35%;
+}
+.section__content-left .section__imgContainer img{
+	display: inline-block;
+	object-fit: cover;
+	height: 169px;
+	width:100%;
+}
+.section__content-left .section__titleContainer{
+	vertical-align: top;
+	display: inline-block;
+}
+.section__content-left .section__titleContainer h4{
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+.section__spotlight .section__titleContainer h4{
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+.section__spotlight .section__titleContainer{
+	width: 50%;
+}
+.section__spotlight .section__titleContainer p{
+	width: 50%;
+}
+.section__spotlight .section__imgContainer{
+	width: 48%;
 
 }
+.section__spotlight .section__imgContainer h3{
+	margin:10% 20px;
+	color: #E17;
+	font-size: 22px;
+	font-weight: 900;
+}
+.section__content-left .section__titleContainer p{
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: "FuturaBookLight";
+}
+.section__content-left .section__titleContainer p span{
+	color: #E17;
+}
+.section__content-right{
+	width:25%;
+}
+@media only screen  and (max-width : 1024px){
+	.section{
+		width: 95%;
+	}
+}
+@media only screen  and (max-width : 768px){
+	.section{
+		width: 98%;
+	}
+}
+@media only screen  and (max-width : 425px){
+	.section{
+		width: 100%;
+	}
+}
+
 
 
 
