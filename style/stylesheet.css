@@ -19,11 +19,22 @@
 	src: url(../fonts/futura-pt-demibold.otf);
 }
 
-html,body{
+html{
 	width: 100%;
 	margin: 0px;
 	background-color: black; 
-	
+}
+body{
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: black; 
+}
+main{
+	/* max-width: 1440px; */
+	margin: 0 auto;
+}
+.content__featured{
+	/* max-width: 1400px; */
 }
 .clearfix::after {
 	clear: both;
@@ -266,7 +277,7 @@ header{
 /* Large screens ----------- */
 @media only screen  and (min-width : 1440px) {
 	.logo-xl{
-		display: block;
+		display: inline-block;
 		background: url("../images/Masthead_SM_3.0.png") no-repeat;
 		background-size: cover;
 		padding: 20px;
@@ -287,7 +298,7 @@ header{
 		width: 100%;
 	}
 	.content__featured{
-		max-width: 1440px;
+		/* max-width: 1440px; */
 		margin: 0 auto;
 	}
 	.xlarge-visible{
@@ -388,7 +399,6 @@ header{
 .bh1-2 .image__container,.bh1-2 .title__container{
 	position: relative;
 }
-
 
 /* Media Queries - tablet */
 @media only screen and (min-width : 768px){
@@ -666,17 +676,16 @@ header{
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1440px) {
+	.logo-xl{
+		padding:4% 0;
+	}
 	header{
 
 		background-color: #000;
 		background-size: cover;
 	}
-	.content{
-
-		padding: 1%;
-	}
 	.header-items{
-		max-width: 1440px;
+		/* max-width: 1440px; */
 		margin: 0 auto;
 	}
 	.header-items .logo {
@@ -709,15 +718,23 @@ header{
 		width: 100%;
 	}
 	.bh1-1 .featured .image__container img {
-		height: 235px;
+		height: 242px;
 	}
 	.bh2-2{
 		width: 65.7%;
 	}
 }
+/* end of feature container  _____________________________________________________  */
+
+/* styles for articles       */
+.content__articles{
+	/* max-width: 1440px; */
+	margin: 0 auto;
+	background-color: white;
+
+}
 
 
-/* end of feature container  */
 
 
 
