@@ -33,6 +33,9 @@ header{
 	clear:both;
 	letter-spacing: 0.1em;
 }
+.logo-xl{
+	display: none;
+}
 .logo{
 	float: left;
 	width: 145px;
@@ -262,6 +265,31 @@ header{
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1440px) {
+	.logo-xl{
+		display: block;
+		background: url("../images/Masthead_SM_3.0.png") no-repeat;
+		background-size: cover;
+		padding: 20px;
+		width: 100%;
+	}
+	.logo-xl__image{
+		width: 40%;
+
+		margin: 0 auto;
+	}
+	.logo-xl__theme p{
+		padding-top: 20px;
+		text-align: center;
+		font-family: "HeroicC";
+		font-size: 20px;
+		color: #fff;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.content__featured{
+		max-width: 1440px;
+		margin: 0 auto;
+	}
 	.xlarge-visible{
 		display: inline-block;
 	}
@@ -291,11 +319,13 @@ header{
 /* End of NavBar Styling    _________________________________________________  */ 
 
 /* Feature Cards Styling    */
+.content{
+	width: 100%;
+}
 .content,.content__featured,.borderholder,.featured{
 	clear:both;
 	font-family: "futuraBookThin";
 	color: #fff;
-	padding: 1%;
 }
 .pink__font{
 	color: #E17;
@@ -355,7 +385,7 @@ header{
 }
 
 /* Media Queries - tablet */
-@media only screen and (min-device-width : 768px){
+@media only screen and (min-width : 768px){
 	.borderholder{
 		margin-left: -4px;
 	}
@@ -395,7 +425,7 @@ header{
 
 	.featured-sm .image__container{
 		margin: 10px;
-		width: 92%;
+		width: 94%;
 		overflow: hidden;
 	}
 
@@ -435,18 +465,18 @@ header{
 		margin: 10px;
 	}
 	.bh-md12 .featured__4{
-		overflow: auto;
+		overflow: hidden;
 		text-transform: uppercase
 	}
 	.bh-md4 {
-		width: 32.72%;
+		width: 33.26%;
 		display: inline-block;
 
 		overflow: auto;
 	}
 	.bh-md4 .featured{
-		padding: 10px;
-		width: 92%;
+		padding: 4%;
+		width: 91.86%;
 		min-height: 247px;
 	}
 	.bh-md4 .featured .image__container{
@@ -501,14 +531,19 @@ header{
 	.bh-last .title__container p span{ 
 		color: #000;
 	}
-}
-@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
-
+	.bh2-2 {
+		width: 100%;
+	}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-	.content {
-		padding: 1% 0.3% 1% 1%;
+	.bh1-1{
+		float: right;
+	}
+	.bh2-1 .image__container {
+		margin: 10px;
+		width: 99%;
+		overflow: hidden;
 	}
 	.bh1-2 .title__container h3{
 		font-size: 45px;
@@ -517,12 +552,13 @@ header{
 		font-size: 45px;
 	}
 	.bh1-2{
-		width: 65%;
+		width: 66.03%;
 		display: inline-block;
 	}
 	.bh1-1{
 		width: 34%;
 		display: inline-block;
+		vertical-align: top;
 	}
 	.bh1-1 .featured .image__container img{
 		object-fit: cover;
@@ -533,17 +569,20 @@ header{
 		width: 94%;
 	}
 	.bh2-2{
-		width: 65%;
+		max-height: 300px;
+		width: 65.34%;
 		display: inline-block;
+		vertical-align: top;
 	}
 	.bh2-1{
-		width: 34%;
-		display: inline-block;
+
+		max-height: 292px;
+		width: 34.9%;
+		float: left;
 	}
 	.bh2-1 .featured,.bh2-2 .featured{
 		padding: 8px;
 	}
-
 	.bh2-1 .image__container,.bh2-2 .image__container{
 		margin: 0;
 	}
@@ -557,7 +596,7 @@ header{
 	}
 	.bh2-2 .featured .image__container img{
 		object-fit: cover;
-		height: 256px;
+		height: 269px;
 		width: 100%;
 	}
 	.bh2-1 .featured .title__container,	.bh2-1 .featured .title__container h3{
@@ -566,15 +605,15 @@ header{
 	.bh2-2 .featured .title__container{
 		width: 48%;
 	}
-	.bh-md4 .featured{
-		width:93.8%;
+	.bh-md4{
+		width: 33.28%;
+		overflow: hidden;
 	}
 	.bh-md4 .featured .image__container img {
 		height: 186px;
 	}
 	.bh-md4 .featured {
-		padding: 10px;
-		width: 93.92%;
+		width: 91.92%;
 		min-height: 291px;
 	}
 	.bh-md6 .featured .title__container {
@@ -584,30 +623,56 @@ header{
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1440px) {
+	header{
+
+		background-color: #000;
+		background-size: cover;
+	}
+	.content{
+
+		padding: 1%;
+	}
+	.header-items{
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	.header-items .logo {
+		display: none;
+	}
 	.bh-md4 {
-		width: 32.9%;
+		width: 33.28%;
 		display: inline-block;
-		overflow: auto;
 	}
 	.bh-md4 .featured {
-		width: 95.45%;
+		width: 91.8%; 
 		min-height: 316px;
 	}
 	.bh-md4 .featured .image__container img {
 		height: 235px;
 	}
-}
-@media only screen  and (min-width : 2560px){
-	.featured-md-1 .image__container img {
-		height: 302px;
-		width: 97%;
+	.bh1-2 {
+		width: 66.02%;
 	}
-	.bh1-1 .featured .image__container {
-		width: 97%;
+	.bh2-1 {
+		width: 34.5%;
 	}
 	.bh2-1 .featured .image__container img {
-		height: 210px;
+		object-fit: cover;
+		height: 199px;
+		width: 100%;
+	}
+	.borderholder.bh-last {
+		margin-top: -7px;
+		width: 100%;
+	}
+	.bh1-1 .featured .image__container img {
+		height: 235px;
+	}
+	.bh2-2{
+		width: 65.7%;
 	}
 }
+
+
 
 
