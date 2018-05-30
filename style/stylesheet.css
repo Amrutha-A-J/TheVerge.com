@@ -391,9 +391,6 @@ header{
 .bh-last .image__container h3{
 	display: none;
 }
-.bh1-2 .image__container,.bh1-2 .title__container{
-	position: relative;
-}
 
 /* Media Queries - tablet */
 @media only screen and (min-width : 768px){
@@ -411,29 +408,29 @@ header{
 		font-size: 12px;
 		text-transform: uppercase;
 	}
-	.bh1-2 .image__container:before {
-
+	.bh1-1{
+		position: relative;
+	}
+	.bh1-1:before {
 		background-color: #f7c626;
-		bottom: 37px;
+		top: -14%;
 		content: "";
 		height: 3px;
-		left: 67px;
+		left: 66px;
 		/* right: 0; */
 		position: absolute;
-		width: 100%;
-		z-index: 4;
+		width: 87%;
 	}
-	.bh1-2 .title__container:after {
+	.bh1-1:after {
 		background-color: #f7c626;
-		top: 327px;
+		top: -5px;
 		content: "";
 		height: 3px;
-		left: -111%;
+		left: 0%;
 		position: absolute;
 		transform: rotate(120deg);
 		transform-origin: bottom right;
-		width: 37px;
-		z-index: 4;
+		width: 47px;
 	}
 	.featured-md-1 .image__container img{
 		object-fit: cover;
@@ -458,7 +455,7 @@ header{
 
 	.bh-md6 .featured .image__container img {
 		object-fit: cover;
-		height: 176px;
+		height: 274px;
 		width: 100%;
 	}
 	.bh-md6 .featured .title__container {
@@ -477,9 +474,8 @@ header{
 		content: "";
 		height: 3px;
 		position: absolute;
-		right: 121px;
+		right: 30%;
 		width: 87%;
-		z-index: 4;
 	}
 	.bh-md12 .image__container img{
 		object-fit: cover;
@@ -490,18 +486,17 @@ header{
 		width: 49%;
 		position: relative;	
 	}
-	/* bh2-2 .title__container:after{
-    background-color: #e5127d;
-    bottom: 0px;
-    content: "";
-    height: 3px;
-    position: absolute;
-    left: 177%;
-    transform: rotate(-120deg);
-    transform-origin: bottom left;
-    width: 38px;
-    z-index: 4;
-	} */
+	.bh2-2 .image__container:after{
+		background-color: #e5127d;
+		bottom: 0px;
+		content: "";
+		height: 3px;
+		position: absolute;
+		left: 74%;
+		transform: rotate(-120deg);
+		transform-origin: bottom left;
+		width: 38px;
+	}
 	
 	.bh-md12 .title__container h3{
 		font-family: "HeroicC";
@@ -591,6 +586,12 @@ header{
 	.bh1-1{
 		float: right;
 	}
+	.bh1-1:before {
+		display: none;
+	}
+	.bh1-1:after {
+		display: none;
+	}
 	.bh2-1 .image__container {
 		margin: 10px;
 		width: 100%;
@@ -620,16 +621,37 @@ header{
 		width: 100%;
 	}
 	.bh2-2{
-		max-height: 300px;
+		min-height: 339px;
 		width: 65.34%;
 		display: inline-block;
 		vertical-align: top;
 	}
 	.bh2-1{
-
-		max-height: 292px;
+		position: relative;
+		min-height: 339px;
 		width: 34.9%;
 		float: left;
+	}
+	.bh2-1:before {
+		background-color: #f7c626;
+		top: -14%;
+		content: "";
+		height: 3px;
+		left: 66px;
+		/* right: 0; */
+		position: absolute;
+		width: 87%;
+	}
+	.bh2-1:after {
+		background-color: #f7c626;
+		top: -5px;
+		content: "";
+		height: 3px;
+		left: 0%;
+		position: absolute;
+		transform: rotate(120deg);
+		transform-origin: bottom right;
+		width: 47px;
 	}
 	.bh2-1 .image__container,.bh2-2 .image__container{
 		margin: 0;
@@ -639,12 +661,12 @@ header{
 	}
 	.bh2-1 .featured .image__container img{
 		object-fit: cover;
-		height: 176px;
+		height: 239px;
 		width: 100%;
 	}
 	.bh2-2 .featured .image__container img{
 		object-fit: cover;
-		height: 269px;
+		height: 332px;
 		width: 100%;
 	}
 	.bh2-1 .featured .title__container,	.bh2-1 .featured .title__container h3{
@@ -700,11 +722,12 @@ header{
 		width: 66.02%;
 	}
 	.bh2-1 {
+		min-height: 339px;
 		width: 34.5%;
 	}
 	.bh2-1 .featured .image__container img {
 		object-fit: cover;
-		height: 176px;
+		height: 239px;
 		width: 100%;
 	}
 	.borderholder.bh-last {
