@@ -94,6 +94,7 @@ header{
 .navBar__items:hover .navBar__content{
 	position: absolute;
 	display: inline-block;
+	overflow: hidden;
 	width: 100vw;
 	top: 78px;
 	left: 0;
@@ -199,6 +200,7 @@ header{
 	.navBar__items:hover .navBar__content{
 		position: absolute;
 		top: 38px;
+		overflow: hidden;
 		display: inline-block;
 		width: auto;
 	}
@@ -254,6 +256,7 @@ header{
 		margin: 0px 1px;
 	}
 	.navBar__items:hover .navBar__content{
+		overflow: hidden;
 		top: 32px;
 	}
 }
@@ -613,7 +616,7 @@ header{
 	}
 	.bh1-1 .featured .image__container img{
 		object-fit: cover;
-		height: 248px;
+		height: 265px;
 		width: 100%;
 	}
 	.bh1-1 .featured .image__container{
@@ -660,12 +663,12 @@ header{
 	}
 	.bh2-1 .featured .image__container img{
 		object-fit: cover;
-		height: 234px;
+		height: 253px;
 		width: 100%;
 	}
 	.bh2-2 .featured .image__container img{
 		object-fit: cover;
-		height: 334px;
+		height: 335px;
 		width: 100%;
 	}
 	.bh2-1 .featured .title__container,	.bh2-1 .featured .title__container h3{
@@ -726,7 +729,7 @@ header{
 	}
 	.bh2-1 .featured .image__container img {
 		object-fit: cover;
-		height: 234px;
+		height: 253px;
 		width: 100%;
 	}
 	.borderholder.bh-last {
@@ -734,7 +737,7 @@ header{
 		width: 100%;
 	}
 	.bh1-1 .featured .image__container img {
-		height: 248px;
+		height: 265px;
 	}
 	.bh2-2{
 		width: 65.7%;
