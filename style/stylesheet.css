@@ -98,7 +98,7 @@ header{
 	width: 100vw;
 	top: 78px;
 	left: 0;
-	background-color: #6A6A6A;
+	background-color: #1a1a1a;
 }
 .DDArrow img{
 	width: 10px;
@@ -194,15 +194,15 @@ header{
 	}
 	.navBar .navBar__items a{
 		border: 0;
-		width: 90%;
+		width: 66px;
 	}
 	
 	.navBar__items:hover .navBar__content{
 		position: absolute;
 		top: 38px;
+		width: 240px;
 		overflow: hidden;
 		display: inline-block;
-		width: auto;
 	}
 	.navBar__content a {
 		padding: 7px 0px 7px 10px;
@@ -247,9 +247,6 @@ header{
 	.navBar ul{
 		list-style-type: none;
 		width: 100%;;
-	}
-	.navBar .navBar__items a{
-		width: 91%;
 	}
 	.navBar__items{
 		width: 11%;
