@@ -413,7 +413,7 @@ header{
 	}
 	.bh1-1:before {
 		background-color: #f7c626;
-		top: -14%;
+		top: -12%;
 		content: "";
 		height: 3px;
 		left: 66px;
@@ -474,7 +474,7 @@ header{
 		content: "";
 		height: 3px;
 		position: absolute;
-		right: 30%;
+		right: 31.5%;
 		width: 87%;
 	}
 	.bh-md12 .image__container img{
@@ -636,7 +636,7 @@ header{
 	}
 	.bh2-1:before {
 		background-color: #f7c626;
-		top: -14%;
+		top: -12%;
 		content: "";
 		height: 3px;
 		left: 66px;
@@ -780,7 +780,7 @@ header{
 }
 .section__content-left .section__titleContainer h4{
 	margin-bottom: 10px;
-	font-size: 17.5px;
+	font-size: 16px;
 }
 .section__spotlight .section__titleContainer{
 	text-align: right;
