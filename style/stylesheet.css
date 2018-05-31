@@ -742,6 +742,10 @@ header{
 	.bh2-2{
 		width: 65.7%;
 	}
+	.bh2-2 .image__container:before {
+		right: 30.5%;
+
+	}
 }
 /* end of feature container  _____________________________________________________  */
 
@@ -781,6 +785,8 @@ header{
 .section__content-left .section__titleContainer h4{
 	margin-bottom: 10px;
 	font-size: 16px;
+	color: rgb(66, 66, 66);
+
 }
 .section__spotlight .section__titleContainer{
 	text-align: right;
@@ -997,6 +1003,7 @@ header{
 	.section__content-left .section__titleContainer h4{
 		margin-top:0;
 		font-size: 14.5px;
+		color: rgb(66, 66, 66);
 	}
 	.section__large .section__titleContainer{
 		width:94%;
