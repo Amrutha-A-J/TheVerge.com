@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">
+    <circle cx="100" cy="100" r="90" fill="#fff" stroke-width="1" stroke="#fff" style="opacity:0.5"/>
+    <polygon points="70, 55 70, 145 145, 100" fill="#E17"/>
+</svg>
