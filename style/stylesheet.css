@@ -441,7 +441,7 @@ header{
 	}
 	.featured-md-1 .image__container img{
 		object-fit: cover;
-		height: 343px;
+		height: 358px;
 		width: 97%;
 	}
 	.featured-md-1 .title__container h3{
@@ -623,6 +623,7 @@ header{
 		width: 66.03%;
 		display: inline-block;
 	}
+
 	.bh1-1{
 		width: 34%;
 		display: inline-block;
@@ -630,7 +631,7 @@ header{
 	}
 	.bh1-1 .featured .image__container img{
 		object-fit: cover;
-		height: 250px;
+		height: 235px;
 		width: 100%;
 	}
 	.bh1-1 .featured .image__container{
@@ -677,12 +678,12 @@ header{
 	}
 	.bh2-1 .featured .image__container img{
 		object-fit: cover;
-		height: 219px;
+		height: 227px;
 		width: 100%;
 	}
 	.bh2-2 .featured .image__container img{
 		object-fit: cover;
-		height: 335px;
+		height: 339px;
 		width: 100%;
 	}
 	.bh2-2 .featured .title__container{
@@ -698,6 +699,9 @@ header{
 	.bh-md4 .featured {
 		width: 100%;
 		min-height: 291px;
+	}
+	.featured-md-1 .image__container img {
+		height: 343px;
 	}
 	.bh-md6 .featured .title__container {
 		margin: 10px 10px 11px 10px;
@@ -729,7 +733,7 @@ header{
 		min-height: 316px;
 	}
 	.bh-md4 .featured .image__container img {
-		height: 235px;
+		height: 243px;
 	}
 	.bh1-2 {
 		width: 66.02%;
@@ -740,7 +744,7 @@ header{
 	}
 	.bh2-1 .featured .image__container img {
 		object-fit: cover;
-		height: 238px;
+		height: 245px;
 		width: 100%;
 	}
 	.borderholder.bh-last {
@@ -748,15 +752,15 @@ header{
 		width: 100%;
 	}
 	.bh1-1 .featured .image__container img {
-		height: 250px;
+		height: 254px;
 	}
 	.bh2-2{
 		width: 65.7%;
 	}
 	.bh2-2 .image__container:before {
 		right: 30.5%;
-
 	}
+
 }
 /* end of feature container  _____________________________________________________  */
 
